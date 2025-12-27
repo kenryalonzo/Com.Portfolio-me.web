@@ -115,12 +115,11 @@ const Features = () => {
           transition={{ duration: 0.7, ease: [0.6, 0.01, 0.05, 0.95] }}
         >
           <p className="font-circular-web text-lg text-blue-50">
-            Into the Metagame Layer
+            Stack Technique & Expertise
           </p>
           <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-            Immerse yourself in a rich and ever-expanding universe where a vibrant
-            array of products converge into an interconnected overlay experience
-            on your world.
+            Technologies modernes et outils professionnels pour créer des
+            applications web performantes, évolutives et visuellement captivantes.
           </p>
         </motion.div>
 
@@ -134,10 +133,10 @@ const Features = () => {
               src="videos/feature-1.mp4"
               title={
                 <>
-                  radia<b>n</b>t
+                  Front<b>e</b>nd
                 </>
               }
-              description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+              description="React • Next.js • TypeScript • Tailwind CSS - Création d'interfaces modernes et performantes."
               isComingSoon
             />
           </BentoTilt>
@@ -173,10 +172,10 @@ const Features = () => {
                 src="videos/feature-2.mp4"
                 title={
                   <>
-                    zig<b>m</b>a
+                    Back<b>e</b>nd
                   </>
                 }
-                description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+                description="Node.js • Express • PostgreSQL • MongoDB - APIs robustes et bases de données optimisées."
                 isComingSoon
               />
             </BentoTilt>
@@ -197,10 +196,10 @@ const Features = () => {
                 src="videos/feature-3.mp4"
                 title={
                   <>
-                    n<b>e</b>xus
+                    Animati<b>o</b>ns
                   </>
                 }
-                description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+                description="Framer Motion • GSAP • Three.js - Expériences interactives et animations fluides."
                 isComingSoon
               />
             </BentoTilt>
@@ -221,10 +220,10 @@ const Features = () => {
                 src="videos/feature-4.mp4"
                 title={
                   <>
-                    az<b>u</b>l
+                    DevO<b>p</b>s
                   </>
                 }
-                description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+                description="Git • Docker • CI/CD • AWS - Déploiement et infrastructure cloud professionnels."
                 isComingSoon
               />
             </BentoTilt>
@@ -243,7 +242,7 @@ const Features = () => {
             <BentoTilt className="bento-tilt_2">
               <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
                 <h1 className="bento-title special-font max-w-64 text-black">
-                  M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+                  Et bien <b>p</b>lus enc<b>o</b>re...
                 </h1>
 
                 <MoveUpRight className="m-5 scale-[5] self-end" />

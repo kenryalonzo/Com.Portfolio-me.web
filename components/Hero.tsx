@@ -156,7 +156,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.6, 0.01, 0.05, 0.95] }}
         >
-          G<b>A</b>MING
+          C<b>O</b>DE
         </motion.h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -186,7 +186,7 @@ const Hero = () => {
                 },
               }}
             >
-              redefi<b>n</b>e
+              cr<b>e</b>ative
             </motion.h1>
 
             <motion.p
@@ -200,7 +200,7 @@ const Hero = () => {
                 },
               }}
             >
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+              Transforming ideas into <br /> exceptional digital experiences
             </motion.p>
 
             <motion.div
@@ -214,8 +214,8 @@ const Hero = () => {
               }}
             >
               <Button
-                id="watch-trailer"
-                title="Watch trailer"
+                id="view-projects"
+                title="View Projects"
                 leftIcon={<MoveUpRight />}
                 containerClass="bg-yellow-300 flex-center gap-1"
               />
@@ -225,7 +225,7 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b>A</b>MING
+        C<b>O</b>DE
       </h1>
     </div>
   );
