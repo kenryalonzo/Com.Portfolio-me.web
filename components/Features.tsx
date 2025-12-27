@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { MoveUpRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
+import AnimatedGradient from "./AnimatedGradient";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -41,7 +42,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ gradientVariant = "frontend" as "frontend" | "backend" | "animations" | "devops" | "more", title, description, isComingSoon }: { gradientVariant?: "frontend" | "backend" | "animations" | "devops" | "more"; title: any; description: any; isComingSoon: any }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -61,13 +62,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <video
-        src={src}
-        loop
-        muted
-        autoPlay
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      <AnimatedGradient variant={gradientVariant} />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -130,7 +125,7 @@ const Features = () => {
         >
           <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
             <BentoCard
-              src="videos/feature-1.mp4"
+              gradientVariant="frontend"
               title={
                 <>
                   Front<b>e</b>nd
@@ -169,7 +164,7 @@ const Features = () => {
           >
             <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
               <BentoCard
-                src="videos/feature-2.mp4"
+                gradientVariant="backend"
                 title={
                   <>
                     Back<b>e</b>nd
@@ -193,7 +188,7 @@ const Features = () => {
           >
             <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
               <BentoCard
-                src="videos/feature-3.mp4"
+                gradientVariant="animations"
                 title={
                   <>
                     Animati<b>o</b>ns
@@ -217,7 +212,7 @@ const Features = () => {
           >
             <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
               <BentoCard
-                src="videos/feature-4.mp4"
+                gradientVariant="devops"
                 title={
                   <>
                     DevO<b>p</b>s
