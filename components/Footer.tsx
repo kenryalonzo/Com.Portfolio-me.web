@@ -16,8 +16,8 @@ const Footer = () => {
   return (
     <footer className="relative w-screen bg-black py-10 text-white overflow-hidden">
       {/* Neon Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-blue-900/10" />
-      <div className="absolute -bottom-40 left-1/2 h-96 w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-[100px]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black to-blue-900/10 pointer-events-none z-0" />
+      <div className="absolute -bottom-40 left-1/2 h-96 w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 blur-[100px] pointer-events-none z-0" />
 
       {/* Top Border Gradient */}
       <div className="absolute top-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />

@@ -10,11 +10,14 @@ const ImageClipBox = ({ src, clipClass }) => (
 const Contact = () => {
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        {/* Neon Glow Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-black to-blue-900/20" />
-        <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-violet-600/20 blur-[100px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-blue-600/20 blur-[100px]" />
+      <div className="relative rounded-lg bg-slate-950 py-24 text-blue-50 sm:overflow-hidden border border-white/10">
+        {/* Lunar Neon Glow Background - Radiant & Alive */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#4c1d95_0%,_#0f172a_70%)] opacity-70" />
+        <div className="absolute -left-20 top-0 h-96 w-96 rounded-full bg-blue-500/30 blur-[100px] mix-blend-screen" />
+        <div className="absolute right-0 bottom-0 h-[500px] w-[500px] rounded-full bg-indigo-500/20 blur-[120px] mix-blend-screen" />
+
+        {/* Floating Particles/Stars Effect */}
+        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
 
         {/* Floating Images - Restored Structure with Projects */}
         <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">

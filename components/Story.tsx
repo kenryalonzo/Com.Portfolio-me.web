@@ -48,8 +48,13 @@ const FloatingImage = () => {
   };
 
   return (
-    <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
-      <div className="flex size-full flex-col items-center py-10 pb-24">
+    <div id="story" className="relative min-h-dvh w-screen bg-black text-blue-50 overflow-hidden">
+      {/* Lunar Neon Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_#3b0764_0%,_#000000_100%)] opacity-80 pointer-events-none z-0" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[500px] rounded-full bg-blue-500/20 blur-[120px] mix-blend-screen pointer-events-none z-0" />
+      <div className="absolute bottom-0 right-0 h-[400px] w-[400px] rounded-full bg-violet-500/10 blur-[100px] pointer-events-none z-0" />
+
+      <div className="relative z-10 flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
           Mon Parcours
         </p>
