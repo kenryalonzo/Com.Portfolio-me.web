@@ -32,6 +32,14 @@ const Hero = () => {
     }
   }, [loadedVideos]);
 
+  // Safety fallback: Force disable loading after 3 seconds if videos are slow
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleMiniVdClick = () => {
     setHasClicked(true);
 

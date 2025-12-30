@@ -107,7 +107,7 @@ const Projects = () => {
     // Projets placeholder
     const projects = [
         {
-            title: "E-Commerce Platform",
+            title: "Plateforme E-Commerce",
             description: "Plateforme e-commerce moderne avec panier, paiement Stripe et dashboard admin.",
             stack: ["Next.js", "TypeScript", "Stripe", "Prisma"],
             image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&q=80",
@@ -116,7 +116,7 @@ const Projects = () => {
             featured: true,
         },
         {
-            title: "Task Manager Pro",
+            title: "Gestionnaire de Tâches",
             description: "Application de gestion de tâches avec drag & drop et collaboration temps réel.",
             stack: ["React", "Firebase", "Framer Motion"],
             image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
@@ -132,7 +132,7 @@ const Projects = () => {
             githubUrl: "#",
         },
         {
-            title: "Weather Dashboard",
+            title: "Dashboard Météo",
             description: "Dashboard météo avec visualisations de données et prévisions en temps réel.",
             stack: ["React", "D3.js", "API Weather"],
             image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
@@ -140,7 +140,7 @@ const Projects = () => {
             githubUrl: "#",
         },
         {
-            title: "Social Media App",
+            title: "Réseau Social",
             description: "Application sociale avec posts, likes, commentaires et messagerie instantanée.",
             stack: ["Next.js", "MongoDB", "Socket.io"],
             image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
