@@ -75,12 +75,14 @@ const NavBar = () => {
           <div className="flex items-center gap-7">
             <img src="/img/logo.png" alt="logo" className="w-10" />
 
-            <Button
-              id="product-button"
-              title="Products"
-              rightIcon={<MoveUpRight />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-            />
+            <a
+              href="/My-CV.pdf"
+              download
+              className="hidden md:flex items-center gap-1 rounded-full bg-blue-50 px-4 py-2 font-general text-xs uppercase text-black hover:bg-white transition-colors"
+            >
+              <span>Mon CV</span>
+              <MoveUpRight size={16} className="rotate-45" />
+            </a>
           </div>
 
           {/* Navigation Links and Audio Button */}

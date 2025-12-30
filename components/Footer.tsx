@@ -1,15 +1,14 @@
-import { Github, Twitter, Linkedin, Mail, MoveUpRight } from "lucide-react";
+import { Github, Linkedin, Mail, MoveUpRight } from "lucide-react";
 
 const socialLinks = [
-  { href: "#", label: "GitHub", icon: <Github /> },
-  { href: "#", label: "LinkedIn", icon: <Linkedin /> },
-  { href: "#", label: "Twitter", icon: <Twitter /> },
-  { href: "mailto:contact@example.com", label: "Email", icon: <Mail /> },
+  { href: "https://github.com/kenryalonzo", label: "GitHub", icon: <Github /> },
+  { href: "https://www.linkedin.com/in/nathanael-fotie-fotie-740807324/", label: "LinkedIn", icon: <Linkedin /> },
+  { href: "mailto:nathanaelfotiefotie@gmail.com", label: "Email", icon: <Mail /> },
 ];
 
 const footerLinks = [
   { title: "Navigation", links: ["Home", "About", "Skills", "Projects", "Contact"] },
-  { title: "Services", links: ["Frontend Dev", "UI/UX Design", "Motion Web", "Consulting"] },
+  { title: "Expertise", links: ["Full-Stack Dev", "Mobile Apps", "React / Next.js", "Node.js"] },
 ];
 
 const Footer = () => {
@@ -28,10 +27,10 @@ const Footer = () => {
           {/* Brand & Socials */}
           <div className="flex flex-col gap-6 max-w-sm">
             <h2 className="special-font font-zentry text-6xl md:text-[8rem] leading-none text-blue-50 opacity-80 mix-blend-overlay">
-              ALEX
+              NATH
             </h2>
             <p className="font-circular-web text-sm text-white/60">
-              Transforming ideas into exceptional digital experiences. Based in Paris, available worldwide.
+              Développeur Full-Stack passionné, je transforme vos idées en solutions digitales performantes.
             </p>
             <div className="flex gap-4 mt-4">
               {socialLinks.map((link, index) => (
@@ -78,7 +77,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 mt-8 md:flex-row text-xs font-circular-web text-white/40">
-          <p>© 2025 Alex. Tous droits réservés.</p>
+          <p>© 2025 Nathanael Fotie. Tous droits réservés.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Politique de confidentialité</a>
             <a href="#" className="hover:text-white transition-colors">Mentions légales</a>

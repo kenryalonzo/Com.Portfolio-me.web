@@ -30,22 +30,21 @@ const About = () => {
 
   return (
     <div id="about" className="min-h-screen w-screen">
-      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5 z-50">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Bonjour, je suis Alex
+          Bonjour, je suis Nathanael
         </p>
 
         <AnimatedTitle
-          title="Créateur d'<b>e</b>xpériences <br /> digitales <b>i</b>nnovantes"
+          title="Développeur Web <br /> et Mobile <b>F</b>ull-Stack"
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="about-subtext">
-          <p>Développeur Full-Stack passionné par l'excellence technique</p>
+        <div className="about-subtext mt-5">
+          <p>Développeur full-stack passionné par l'écosystème JavaScript</p>
           <p className="text-gray-500">
-            Je transforme des idées en applications web performantes et
-            visuellement captivantes, en combinant code propre, design soigné
-            et animations fluides pour créer des expériences mémorables.
+            Expert en React, Node.js et TypeScript, je crée des applications web et mobiles performantes et centrées sur l'utilisateur.
+            Fort d'expériences concrètes comme le développement du site Doualair, je transforme vos idées en réalité digitale.
           </p>
         </div>
       </div>

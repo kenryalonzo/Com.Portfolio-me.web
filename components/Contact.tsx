@@ -57,12 +57,17 @@ const Contact = () => {
             Discutons de la manière dont je peux vous aider.
           </p>
 
-          <Button
-            id="email-btn"
-            title="hello@alex-dev.com"
-            containerClass="mt-10 cursor-pointer bg-white text-black hover:bg-blue-50"
-            leftIcon={<span className="mr-2 text-xl">✉️</span>}
-          />
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <Button
+              id="email-btn"
+              title="nathanaelfotiefotie@gmail.com"
+              containerClass="cursor-pointer bg-white text-black hover:bg-blue-50"
+              leftIcon={<span className="mr-2 text-xl">✉️</span>}
+            />
+            <a href="tel:+237651345022" className="text-blue-50 hover:text-white transition-colors">
+              +237 651 345 022
+            </a>
+          </div>
         </div>
       </div>
     </div>
