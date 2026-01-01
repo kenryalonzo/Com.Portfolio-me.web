@@ -112,8 +112,8 @@ const Projects = () => {
             description: "Plateforme innovante pour la gestion et la visualisation de la qualité de l'air à Douala.",
             stack: ["React", "Node.js", "API REST", "Google Maps"],
             image: "img/project-Doualair-1.png",
-            demoUrl: "#",
-            githubUrl: "#",
+            demoUrl: "https://doualair-web.vercel.app/",
+            githubUrl: "", // Private repo
             featured: true,
         },
         {
@@ -121,24 +121,24 @@ const Projects = () => {
             description: "Solution complète de gestion d'espace et de réservation en ligne.",
             stack: ["Next.js", "TypeScript", "Tailwind CSS"],
             image: "img/project-alphaSpace-1.png",
-            demoUrl: "#",
-            githubUrl: "#",
+            demoUrl: "https://alpha-space-rho.vercel.app/",
+            githubUrl: "https://github.com/kenryalonzo/alphaSpace.git",
         },
         {
             title: "DevEvent",
             description: "Application événementielle pour développeurs, gestion de conférences et ticketing.",
             stack: ["React Native", "Firebase", "Mobile"],
             image: "img/project-devEvent-1.png",
-            demoUrl: "#",
-            githubUrl: "#",
+            demoUrl: "https://com-event-dev-web.vercel.app/",
+            githubUrl: "https://github.com/kenryalonzo/com.eventDev.web.git",
         },
         {
             title: "Frechel Shopping",
             description: "E-commerce moderne et performant avec expérience utilisateur optimisée.",
             stack: ["MERN Stack", "Stripe", "Redux"],
             image: "img/project-frechelShopping-1.png",
-            demoUrl: "#",
-            githubUrl: "#",
+            demoUrl: "https://www.frechnel-shopping.com/",
+            githubUrl: "https://github.com/kenryalonzo/com.frechnel.web.git",
         },
     ];
 
@@ -152,7 +152,7 @@ const Projects = () => {
                     transition={{ duration: 0.7, ease: [0.6, 0.01, 0.05, 0.95] }}
                 >
                     <p className="font-circular-web text-lg text-blue-50">
-                        Projets Récents
+                        Mes Réalisations
                     </p>
                     <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
                         Une sélection de projets qui démontrent mes compétences en

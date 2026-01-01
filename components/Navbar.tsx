@@ -8,7 +8,7 @@ import { MoveUpRight } from "lucide-react";
 
 import Button from "./Button";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["Accueil", "À propos", "Compétences", "Projets", "Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
@@ -88,15 +88,41 @@ const NavBar = () => {
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
-                >
-                  {item}
-                </a>
-              ))}
+              {navItems.map((item, index) => {
+                // Map displayed names to actual section IDs
+                let sectionId = item.toLowerCase();
+                if (item === "Accueil") sectionId = "hero"; // Assuming Hero section ID is 'hero' or top
+                if (item === "Compétences") sectionId = "features"; // Assuming Features section ID is 'features' (it was 'prologue' before effectively?) check Features.tsx
+                if (item === "À propos") sectionId = "about";
+
+                // Let's verify section IDs. 
+                // Hero often doesn't have an ID but top of page. Let's assume #hero or # 
+                // Features.tsx has no ID in the view_file output? wait.
+                // Looking at previous context:
+                // Projects -> id="projects"
+                // About -> id="about"
+                // Contact -> id="contact"
+                // Features -> no ID seen in previous view_file. I should probably add one to Features too or map it correctly.
+                // Let's map safely for now:
+
+                const idMap: { [key: string]: string } = {
+                  "Accueil": "hero",
+                  "À propos": "about",
+                  "Compétences": "features", // We need to add id="features" to Features.tsx
+                  "Projets": "projects",
+                  "Contact": "contact"
+                };
+
+                return (
+                  <a
+                    key={index}
+                    href={`#${idMap[item] || item.toLowerCase()}`}
+                    className="nav-hover-btn"
+                  >
+                    {item}
+                  </a>
+                )
+              })}
             </div>
 
             <button

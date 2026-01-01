@@ -58,12 +58,14 @@ const Contact = () => {
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
-            <Button
-              id="email-btn"
-              title="contacte moi"
-              containerClass="cursor-pointer bg-white text-black hover:bg-blue-50"
-              leftIcon={<span className="mr-2 text-xl">✉️</span>}
-            />
+            <a href="mailto:nathanaelfotiefotie@gmail.com">
+              <Button
+                id="email-btn"
+                title="contacte moi"
+                containerClass="cursor-pointer bg-white text-black hover:bg-blue-50"
+                leftIcon={<span className="mr-2 text-xl">✉️</span>}
+              />
+            </a>
             <a href="tel:+237651345022" className="text-blue-50 hover:text-white transition-colors">
               +237 651 345 022
             </a>

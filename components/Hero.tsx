@@ -94,7 +94,7 @@ const Hero = () => {
   const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
 
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden">
+    <div id="hero" className="relative h-dvh w-screen overflow-x-hidden">
       <AnimatePresence>
         {loading && (
           <motion.div
@@ -221,12 +221,14 @@ const Hero = () => {
                 },
               }}
             >
-              <Button
-                id="view-projects"
-                title="View Projects"
-                leftIcon={<MoveUpRight />}
-                containerClass="bg-yellow-300 flex-center gap-1"
-              />
+              <a href="#projects">
+                <Button
+                  id="view-projects"
+                  title="View Projects"
+                  leftIcon={<MoveUpRight />}
+                  containerClass="bg-yellow-300 flex-center gap-1"
+                />
+              </a>
             </motion.div>
           </motion.div>
         </div>

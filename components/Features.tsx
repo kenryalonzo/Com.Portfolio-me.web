@@ -101,7 +101,7 @@ const Features = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="bg-black pb-52">
+    <section ref={ref} className="bg-black pb-52" id="features">
       <div className="container mx-auto px-3 md:px-10">
         <motion.div
           className="px-5 py-32"

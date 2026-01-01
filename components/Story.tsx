@@ -118,11 +118,13 @@ const FloatingImage = () => {
               opportunité d'apprendre et de repousser les limites du possible.
             </p>
 
-            <Button
-              id="contact-btn"
-              title="Me contacter"
-              containerClass="mt-5"
-            />
+            <a href="mailto:nathanaelfotiefotie@gmail.com">
+              <Button
+                id="contact-btn"
+                title="Me contacter"
+                containerClass="mt-5"
+              />
+            </a>
           </div>
         </div>
       </div>
