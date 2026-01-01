@@ -138,7 +138,7 @@ const Features = () => {
         </motion.div>
 
         <motion.div
-          className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7"
+          className="grid h-auto md:h-[135vh] w-full grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-7"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={{
@@ -186,7 +186,7 @@ const Features = () => {
               },
             }}
           >
-            <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+            <BentoTilt className="bento-tilt_1 row-span-1 ms-0 md:col-span-1 md:ms-0">
               <BentoCard
                 gradientVariant="animations"
                 title={
@@ -210,7 +210,7 @@ const Features = () => {
               },
             }}
           >
-            <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+            <BentoTilt className="bento-tilt_1 me-0 md:col-span-1 md:me-0">
               <BentoCard
                 gradientVariant="devops"
                 title={

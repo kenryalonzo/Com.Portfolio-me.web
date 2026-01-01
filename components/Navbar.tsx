@@ -21,6 +21,7 @@ const NavBar = () => {
 
   const { y: currentScrollY } = useWindowScroll();
   const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   // Toggle audio and visual indicator
@@ -151,7 +152,60 @@ const NavBar = () => {
               ))}
             </button>
           </div>
+
+          {/* Mobile Hamburger Menu Trigger - Visible only on small screens */}
+          <div className="block md:hidden">
+            <button
+              className="text-black focus:outline-none"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {/* Simple Hamburger Icon */}
+              <div className="space-y-1.5">
+                <span className={clsx("block h-0.5 w-6 bg-black transition-transform", { "rotate-45 translate-y-2": isMobileMenuOpen })} ></span>
+                <span className={clsx("block h-0.5 w-6 bg-black transition-opacity", { "opacity-0": isMobileMenuOpen })}></span>
+                <span className={clsx("block h-0.5 w-6 bg-black transition-transform", { "-rotate-45 -translate-y-2": isMobileMenuOpen })}></span>
+              </div>
+            </button>
+          </div>
         </nav>
+
+        {/* Mobile Navigation Dropdown */}
+        <div className={clsx("md:hidden absolute top-full left-0 w-full bg-blue-50 border-t border-black/10 transition-all duration-300 ease-in-out overflow-hidden shadow-lg rounded-b-lg", {
+          "max-h-0 opacity-0 invisible": !isMobileMenuOpen,
+          "max-h-screen opacity-100 visible": isMobileMenuOpen
+        })}>
+          <div className="flex flex-col p-4 gap-4">
+            {navItems.map((item, index) => {
+              let sectionId = item.toLowerCase();
+              // Logic reuse
+              const idMap: { [key: string]: string } = {
+                "Accueil": "hero",
+                "À propos": "about",
+                "Compétences": "features",
+                "Projets": "projects",
+                "Contact": "contact"
+              };
+              return (
+                <a
+                  key={index}
+                  href={`#${idMap[item] || item.toLowerCase()}`}
+                  className="text-black font-general text-lg font-medium p-3 hover:bg-black/5 rounded-lg text-center"
+                  onClick={() => setIsMobileMenuOpen(false)} // Close on click
+                >
+                  {item}
+                </a>
+              )
+            })}
+            <a
+              href="/My-CV.pdf"
+              download
+              className="flex items-center justify-center gap-2 text-black font-general text-lg font-medium p-3 hover:bg-black/5 rounded-lg border border-black/10"
+            >
+              <span>Mon CV</span>
+              <MoveUpRight size={16} />
+            </a>
+          </div>
+        </div>
       </header>
     </div>
   );

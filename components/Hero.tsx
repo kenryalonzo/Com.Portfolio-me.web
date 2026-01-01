@@ -184,7 +184,7 @@ const Hero = () => {
             }}
           >
             <motion.h1
-              className="special-font hero-heading text-blue-100"
+              className="special-font hero-heading text-blue-100 text-5xl md:text-7xl lg:text-[12rem]"
               variants={{
                 hidden: { opacity: 0, y: 30 },
                 visible: {

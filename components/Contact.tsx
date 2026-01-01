@@ -25,7 +25,7 @@ const Contact = () => {
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '50px 50px' }}></div>
 
         {/* Floating Images - Restored Structure with Projects */}
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
+        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden lg:block lg:left-20 lg:w-96">
           <ImageClipBox
             src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80"
             clipClass="contact-clip-path-1 grayscale transition-all duration-500 hover:grayscale-0"
@@ -54,7 +54,7 @@ const Contact = () => {
 
           <AnimatedTitle
             title="Envie de c<b>o</b>llaborer <br /> sur un i<b>d</b>ée f<b>o</b>lle ?"
-            containerClass="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
+            containerClass="special-font !text-4xl md:!text-[6.2rem] w-full font-zentry !font-black !leading-[.9]"
           />
 
           <p className="mt-6 max-w-md text-center font-circular-web text-lg text-blue-50 opacity-70">
