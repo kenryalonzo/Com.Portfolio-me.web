@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="mt-10 flex flex-col items-center gap-4">
             <Button
               id="email-btn"
-              title="nathanaelfotiefotie@gmail.com"
+              title="contacte moi"
               containerClass="cursor-pointer bg-white text-black hover:bg-blue-50"
               leftIcon={<span className="mr-2 text-xl">✉️</span>}
             />

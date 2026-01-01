@@ -26,11 +26,23 @@ const About = () => {
       height: "100vh",
       borderRadius: 0,
     });
+
+    // Animate text opacity out as scroll progresses
+    gsap.to("#about-text", {
+      scrollTrigger: {
+        trigger: "#clip",
+        start: "top bottom",
+        end: "center center",
+        scrub: true,
+      },
+      opacity: 0,
+      y: -50,
+    });
   });
 
   return (
     <div id="about" className="min-h-screen w-screen">
-      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5 z-50">
+      <div id="about-text" className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
           Bonjour, je suis Nathanael
         </p>
@@ -40,7 +52,7 @@ const About = () => {
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="about-subtext mt-5">
+        <div className="about-subtext">
           <p>Développeur full-stack passionné par l'écosystème JavaScript</p>
           <p className="text-gray-500">
             Expert en React, Node.js et TypeScript, je crée des applications web et mobiles performantes et centrées sur l'utilisateur.
