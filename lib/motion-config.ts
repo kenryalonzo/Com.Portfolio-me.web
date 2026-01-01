@@ -7,7 +7,7 @@ export const prefersReducedMotion =
 
 // Subtle easing curves for professional feel
 export const easings = {
-    smooth: [0.6, 0.01, 0.05, 0.95],
+    smooth: [0.6, 0.01, 0.05, 0.95] as any,
     softSpring: [0.25, 0.46, 0.45, 0.94],
     gentle: [0.33, 1, 0.68, 1],
 };

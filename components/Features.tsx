@@ -5,11 +5,11 @@ import { MoveUpRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import AnimatedGradient from "./AnimatedGradient";
 
-export const BentoTilt = ({ children, className = "" }) => {
+export const BentoTilt = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const [transformStyle, setTransformStyle] = useState("");
-  const itemRef = useRef(null);
+  const itemRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (event) => {
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!itemRef.current) return;
 
     const { left, top, width, height } =
@@ -42,12 +42,12 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ gradientVariant = "frontend" as "frontend" | "backend" | "animations" | "devops" | "more", title, description, isComingSoon }: { gradientVariant?: "frontend" | "backend" | "animations" | "devops" | "more"; title: any; description: any; isComingSoon: any }) => {
+export const BentoCard = ({ gradientVariant = "frontend" as "frontend" | "backend" | "animations" | "devops" | "more", title, description, isComingSoon }: { gradientVariant?: "frontend" | "backend" | "animations" | "devops" | "more"; title: React.ReactNode; description: string; isComingSoon?: boolean }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
-  const hoverButtonRef = useRef(null);
+  const hoverButtonRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (event) => {
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!hoverButtonRef.current) return;
     const rect = hoverButtonRef.current.getBoundingClientRect();
 

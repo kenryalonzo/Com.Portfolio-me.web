@@ -1,7 +1,12 @@
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 
-const ImageClipBox = ({ src, clipClass }) => (
+interface ImageClipBoxProps {
+  src: string;
+  clipClass: string;
+}
+
+const ImageClipBox = ({ src, clipClass }: ImageClipBoxProps) => (
   <div className={clipClass}>
     <img src={src} />
   </div>
@@ -49,7 +54,7 @@ const Contact = () => {
 
           <AnimatedTitle
             title="Envie de c<b>o</b>llaborer <br /> sur un i<b>d</b>ée f<b>o</b>lle ?"
-            className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
+            containerClass="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 
           <p className="mt-6 max-w-md text-center font-circular-web text-lg text-blue-50 opacity-70">
