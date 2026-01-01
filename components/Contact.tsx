@@ -36,7 +36,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
+        <div className="absolute -top-40 left-20 w-60 hidden sm:top-1/2 md:block md:left-auto md:right-10 lg:top-20 lg:w-80">
           <ImageClipBox
             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80"
             clipClass="absolute md:scale-125 grayscale transition-all duration-500 hover:grayscale-0"
