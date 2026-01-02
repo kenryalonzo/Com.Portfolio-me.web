@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://nathanael-fotie-fotie.work.gd/sitemap.xml',
+        sitemap: 'https://com-portfolio-me-web.vercel.app/sitemap.xml',
     };
 }

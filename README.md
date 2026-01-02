@@ -2,14 +2,14 @@
   <img src="public/img/logo.png" alt="Logo" width="80" height="auto" />
   <br />
   
-  # Nathanael Fotie - Portfolio 2024
+  # Nathanael Fotie - Portfolio 2026
   
   <p align="center">
     <img src="public/favicon.svg" width="25" style="vertical-align: middle; margin-right: 10px;" />
     <b>Développeur Web & Mobile Full-Stack | Passionné par l'écosystème JavaScript</b>
   </p>
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/62a67e4e-0000-0000-0000-000000000000/deploy-status)](https://app.netlify.com/sites/your-site/deploys)
+  [![Vercel Deployment](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://com-portfolio-me-web.vercel.app)
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
   ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
   ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -36,7 +36,7 @@ Conçu comme une expérience immersive, ce site plonge le visiteur dans mon univ
 ### ✨ Fonctionnalités Clés
 
 *   **Design & UX Immersifs** : Interface "Zentry-inspired" avec des effets de parallaxe, de "tilt" 3D et des transitions de page soignées via **Framer Motion** et **GSAP**.
-*   **Performance Optimale** : Construit sur **Next.js 15**, optimisé pour le SEO et le chargement rapide (Lighthouse score 95+).
+*   **Performance Optimale** : Construit sur **Next.js 16.1.1**, optimisé pour le SEO et le chargement rapide (Lighthouse score 95+).
 *   **Responsive Design** : Une expérience fluide du mobile au desktop (adaptative layouts, hamburger menu intelligent).
 *   **Vitrine de Projets** : Une section "Mes Réalisations" dynamique présentant mes travaux majeurs (Doualair, AlphaSpace, etc.) avec liens démos et GitHub.
 
@@ -46,12 +46,13 @@ Ce portfolio a été forgé avec les technologies les plus modernes :
 
 | Domaine | Technologies |
 | :--- | :--- |
-| **Framework** | [Next.js 15](https://nextjs.org/) (App Router) |
+| **Framework** | [Next.js 16.1.1](https://nextjs.org/) (App Router) |
 | **Langage** | [TypeScript](https://www.typescriptlang.org/) (Strict typing) |
 | **Styling** | [Tailwind CSS](https://tailwindcss.com/) (v4 alpha) |
 | **Animations** | [GSAP](https://gsap.com/) (ScrollTrigger) & [Framer Motion](https://www.framer.com/motion/) |
 | **Icônes** | [Lucide React](https://lucide.dev/) |
 | **SEO** | Metadata API, Open Graph, Sitemap XML |
+| **Déploiement** | [Vercel](https://vercel.com/) |
 
 ## 💻 Installation & Démarrage
 
@@ -59,8 +60,8 @@ Pour lancer ce projet localement sur votre machine :
 
 1.  **Cloner le dépôt** :
     ```bash
-    git clone https://github.com/votre-username/portfolio-me.git
-    cd portfolio-me
+    git clone https://github.com/kenryalonzo/Com.Portfolio-me.web.git
+    cd Com.Portfolio-me.web
     ```
 
 2.  **Installer les dépendances** :
@@ -81,7 +82,7 @@ Pour lancer ce projet localement sur votre machine :
 
 Vous avez une idée folle ? Envie de collaborer ? N'hésitez pas à me contacter !
 
-*   **Portfolio** : [nathanael-fotie-fotie.work.gd](https://nathanael-fotie-fotie.work.gd)
+*   **Portfolio** : [com-portfolio-me-web.vercel.app](https://com-portfolio-me-web.vercel.app)
 *   **Email** : [nathanaelfotiefotie@gmail.com](mailto:nathanaelfotiefotie@gmail.com)
 *   **LinkedIn** : [Nathanael Fotie Fotie](https://www.linkedin.com/in/nathanael-fotie-fotie-740807324/)
 *   **GitHub** : [kenryalonzo](https://github.com/kenryalonzo)
@@ -90,5 +91,5 @@ Vous avez une idée folle ? Envie de collaborer ? N'hésitez pas à me contacter
 
 <div align="center">
   <p>Fait avec ❤️ et beaucoup de café par <b>Nathanael Fotie Fotie</b>.</p>
-  <p>© 2024 - Tous droits réservés.</p>
+  <p>© 2026 - Tous droits réservés.</p>
 </div>

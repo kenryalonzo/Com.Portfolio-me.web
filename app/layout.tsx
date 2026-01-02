@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nathanael-fotie-fotie.work.gd"),
+  metadataBase: new URL("https://com-portfolio-me-web.vercel.app"),
   title: "Nathanael Fotie Fotie | Développeur Web & Mobile Full-Stack",
   description: "Portfolio de Nathanael Fotie Fotie. Expert React, Node.js, TypeScript. Création d'applications web et mobiles performantes, scalables et centrées sur l'utilisateur.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Portfolio Développeur",
     "Freelance Informatique",
   ],
-  authors: [{ name: "Nathanael Fotie Fotie", url: "https://nathanael-fotie-fotie.work.gd" }],
+  authors: [{ name: "Nathanael Fotie Fotie", url: "https://com-portfolio-me-web.vercel.app" }],
   creator: "Nathanael Fotie Fotie",
   robots: {
     index: true,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://nathanael-fotie-fotie.work.gd",
+    url: "https://com-portfolio-me-web.vercel.app",
     title: "Nathanael Fotie Fotie | Développeur Web & Mobile Full-Stack",
     description: "Découvrez mes projets et compétences en développement web et mobile. Expert React, Node.js, et solutions sur mesure.",
     siteName: "Nathanael Fotie Portfolio",
